@@ -1,0 +1,54 @@
+artemmef@fedora:~$ cat ~/project_artifacts/commands_history.txt
+    1  ip link show
+    2  sudo nmcli connection add con-name static-enp0s3 ifname enp0s3 type ethernet ipv4.method manual ipv4.addresses 192.168.1.100/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8
+    3  nmcli connection show
+    4  sudo shutdown now
+    5  systemctl poweroff -i
+    6  lsblk
+    7  sudo fdisk /dev/sdb
+    8  sudo mkfs.ext4 -L MEPHI_DATA /dev/sdb1
+    9  sudo mkdir -p /data/mephi-web
+   10  echo "LABEL=MEPHI_DATA /data/mephi-web ext4 defaults 0 2" | sudo tee -a /etc/fstab
+   11  sudo mount -a
+   12  sudo systemctl daemon-reload
+   13  sudo mount -a
+   14  mount | grep /data/mephi-web
+   15  sudo systemctl start nginx
+   16  sudo systemctl enable nginx
+   17  sudo systemctl status nginx
+   18  sudo journalctl -u nginx --since "5 minutes ago" > /tmp/nginx_recent_logs.txt
+   19  ls -l /tmp/nginx_recent_logs.txt
+   20  id mephi-admin
+   21  ls -ld /data/mephi-web
+   22  sudo chgrp -R mephi-devs /data/mephi-web
+   23  sudo chmod 2775 /data/mephi-web
+   24  ls -ld /data/mephi-web
+   25  getenforce
+   26  sudo semanage fcontext -a -t httpd_sys_content_t "/data/mephi-web(/.*)?"
+   27  sudo restorecon -Rv /data/mephi-web
+   28  ls -Z /data/mephi-web
+   29  which tcpdump
+   30  sudo setcap 'cap_net_raw,cap_net_admin+ep' /usr/sbin/tcpdump
+   31  getcap /usr/sbin/tcpdump
+   32  tcpdump --help
+   33  sudo mkdir -p /etc/ssh
+   34  echo "root" | sudo tee /etc/ssh/denied_users
+   35  sudo cp /etc/pam.d/sshd /etc/pam.d/sshd.backup
+   36  echo "auth required pam_listfile.so item=user sense=deny file=/etc/ssh/denied_users onerr=succeed" | sudo tee -a /etc/pam.d/sshd
+   37  sudo su - mephi-admin
+   38  sudo nmcli connection up static-enp0s3
+   39  ip addr show enp0s3
+   40  sudo rm -rf /usr/share/nginx/html
+   41  sudo ln -s /data/mephi-web /usr/share/nginx/html
+   42  sudo systemctl restart nginx
+   43  curl http://192.168.1.100
+   44  sudo dnf install -y git
+   45  cd ~/project_artifacts
+   46  git clone https://github.com/Gafarovgit/mephi-session-project-2026.git
+   47  resolvectl status
+   48  sudo nmcli connection down static-enp0s3
+   49  sudo nmcli connection up dhcp-enp0s3
+   50  ping -c 2 github.com
+   51  mkdir -p ~/project_artifacts
+   52  history > ~/project_artifacts/commands_history.txt
+artemmef@fedora:~$ 
