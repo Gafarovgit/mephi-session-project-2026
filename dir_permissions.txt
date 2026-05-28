@@ -1,0 +1,3 @@
+artemmef@fedora:~/project_artifacts$ cat ~/project_artifacts/dir_permissions.txt
+drwxrwsr-x. 3 root mephi-devs 4096 May 28 23:04 /data/mephi-web
+artemmef@fedora:~/project_artifacts$ 
