@@ -1,0 +1,6 @@
+artemmef@fedora:~/project_artifacts$ cat ~/project_artifacts/nginx_recent_logs.txt
+May 28 22:58:03 fedora systemd[1]: Starting nginx.service - The nginx HTTP and reverse proxy server...
+May 28 22:58:03 fedora nginx[4330]: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+May 28 22:58:03 fedora nginx[4330]: nginx: configuration file /etc/nginx/nginx.conf test is successful
+May 28 22:58:03 fedora systemd[1]: Started nginx.service - The nginx HTTP and reverse proxy server.
+artemmef@fedora:~/project_artifacts$ 
