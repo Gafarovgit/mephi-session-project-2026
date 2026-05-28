@@ -1,0 +1,17 @@
+artemmef@fedora:~/project_artifacts$ cat ~/project_artifacts/fstab
+
+#
+# /etc/fstab
+# Created by anaconda on Thu May 28 18:47:59 2026
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk/'.
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+#
+# After editing this file, run 'systemctl daemon-reload' to update systemd
+# units generated from this file.
+#
+UUID=e71fac5f-91e1-4e10-8bb5-95578bbd0043 / btrfs subvol=root,compress=zstd:1 0 0
+UUID=31112108-4fe6-4230-97f3-7bd5a743bbed /boot ext4 defaults 1 2
+UUID=e71fac5f-91e1-4e10-8bb5-95578bbd0043 /home btrfs subvol=home,compress=zstd:1 0 0
+LABEL=MEPHI_DATA /data/mephi-web ext4 defaults 0 2
+artemmef@fedora:~/project_artifacts$ 
