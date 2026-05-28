@@ -1,0 +1,4 @@
+artemmef@fedora:~/project_artifacts$ cat ~/project_artifacts/selinux_context.txt
+unconfined_u:object_r:httpd_sys_content_t:s0 index.html
+    system_u:object_r:httpd_sys_content_t:s0 lost+found
+artemmef@fedora:~/project_artifacts$ 
