@@ -1,0 +1,2 @@
+artemmef@fedora:~/project_artifacts$ cat ~/project_artifacts/curl_output.txt
+Hello from Student: М255945
