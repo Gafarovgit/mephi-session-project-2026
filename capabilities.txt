@@ -1,0 +1,3 @@
+artemmef@fedora:~/project_artifacts$ cat ~/project_artifacts/capabilities.txt
+/usr/bin/tcpdump cap_net_admin,cap_net_raw=ep
+artemmef@fedora:~/project_artifacts$ 
