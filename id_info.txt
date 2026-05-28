@@ -1,0 +1,3 @@
+artemmef@fedora:~/project_artifacts$ cat ~/project_artifacts/id_info.txt
+uid=1001(mephi-admin) gid=1001(mephi-devs) groups=1001(mephi-devs)
+artemmef@fedora:~/project_artifacts$ 
